@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace _5_2_Lab_Enum_to_do_List
 {
@@ -21,7 +23,7 @@ namespace _5_2_Lab_Enum_to_do_List
             //Create a list to hold tasks
             List<string> tasklist = new List<string>();
             //Loop through each week day so user can enter task
-            foreach (WeekDays   day in Enum.GetValues(typeof(WeekDays)))
+            foreach (WeekDays day in Enum.GetValues(typeof(WeekDays)))
             {
                 Console.WriteLine("Enter a new task for " + day);
                 string task = day + " : " + Console.ReadLine();
